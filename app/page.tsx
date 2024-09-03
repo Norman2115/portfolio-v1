@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import Section from "@/components/Section";
@@ -25,6 +26,7 @@ export default function Home() {
       <Section id="contact">
         <ContactForm />
       </Section>
+      <Footer />
     </main>
   );
 }

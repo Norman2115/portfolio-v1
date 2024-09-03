@@ -50,24 +50,28 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 30%, 0);
     transform: translate3d(0, 30%, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 30%, 0);
     transform: translate3d(0, 30%, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -83,28 +87,33 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
+
 @keyframes slideInUp {
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     visibility: visible;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -133,6 +142,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -160,10 +170,12 @@
     --chart-5: 340 75% 55%;
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

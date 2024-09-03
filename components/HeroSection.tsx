@@ -10,13 +10,14 @@ import {
   FaMedium,
 } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
+import { contact } from "@/constants/contact";
 
 function HeroSection() {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-20">
+    <div className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-[1200px] flex flex-col md:flex-row px-6">
         {/* Left */}
-        <div className="md:w-3/5 flex flex-col justify-center text-left">
+        <div className="md:w-3/5 flex flex-col justify-center items-center text-center md:items-start md:text-left">
           <h1 className="text-4xl md:text-5xl font-black mb-5">
             Hi, I&apos;m Chung Henn.
           </h1>
@@ -31,38 +32,47 @@ function HeroSection() {
           </h1>
           <div className="flex justify-start space-x-4 mb-12">
             <Link
-              href="https://www.instagram.com/norman_tchenn?igsh=MWQ2ZTl0ZXkyZDY3dw%3D%3D&utm_source=qr"
+              href={contact.instagram}
               target="_blank"
               aria-label="Instagram"
+              className="hover:text-teal transition-transform duration-200 hover:scale-105"
             >
               <FaInstagram size={40} />
             </Link>
             <Link
-              href="https://medium.com/@normantch04"
+              href={contact.medium}
               target="_blank"
               aria-label="Medium"
+              className="hover:text-teal transition-transform duration-200 hover:scale-110"
             >
               <FaMedium size={40} />
             </Link>
             <Link
-              href="https://github.com/Norman2115"
+              href={contact.github}
               target="_blank"
               aria-label="Github"
+              className="hover:text-teal transition-transform duration-200 hover:scale-110"
             >
               <FaGithub size={40} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/chung-henn-teo"
+              href={contact.linkedin}
               target="_blank"
               aria-label="Linkedin"
+              className="hover:text-teal transition-transform duration-200 hover:scale-110"
             >
               <FaLinkedin size={40} />
             </Link>
-            <Link href="/" target="_blank" aria-label="Twitter">
+            <Link
+              href={contact.twitter}
+              target="_blank"
+              aria-label="Twitter"
+              className="hover:text-teal transition-transform duration-200 hover:scale-110"
+            >
               <FaTwitter size={40} />
             </Link>
           </div>
-          <button className="px-14 py-4 text-xl font-medium bg-teal rounded-full hover:bg-ligter-teal transition duration-300 self-start">
+          <button className="px-14 py-4 text-xl font-medium bg-teal rounded-full hover:bg-ligter-teal transition duration-300">
             Resume
           </button>
         </div>
@@ -73,7 +83,7 @@ function HeroSection() {
             alt="Chung Henn"
             width={400}
             height={400}
-            className="rounded-full"
+            className="rounded-full transition-transform duration-300 hover:scale-105"
             priority
           />
         </div>

@@ -43,7 +43,7 @@ function TopNavBar() {
       : "text-nav-bar-link hover:bg-teal hover:rounded-lg hover:text-white px-4 py-2";
 
   return (
-    <div className="fixed top-0 left-0 w-full flex bg-dark-background justify-between px-16 py-4 z-50">
+    <div className="fixed top-0 left-0 w-full flex justify-between px-16 py-4 z-50 backdrop-filter backdrop-blur-md bg-dark-background/75">
       <h1 className="font-extrabold text-lg text-medium-light-grey flex items-center">
         CHUNG HENN TEO
       </h1>
@@ -70,7 +70,7 @@ function TopNavBar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-full right-4 mt-2 bg-background p-10 z-40 flex flex-col space-y-4 lg:hidden rounded-xl">
+        <div className="absolute top-full right-4 mt-2 bg-background p-10 z-40 flex flex-col space-y-4 lg:hidden rounded-xl bg-dark-background">
           {["home", "about", "skill", "project", "contact"].map((section) => (
             <Link
               key={section}

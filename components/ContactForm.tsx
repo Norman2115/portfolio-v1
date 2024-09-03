@@ -45,13 +45,13 @@ function ContactForm() {
   }
 
   return (
-    <div className="min-h-screen flex justify-center">
+    <div className="min-h-[91vh] flex justify-center">
       <div className="w-full max-w-[1200px] flex flex-col items-center px-10">
         <h1 className="font-extrabold text-center text-3xl md:text-4xl mt-24">
           Contact Me
         </h1>
-        <div className="mt-7 grid grid-cols-1 md:grid-cols-2 w-full border-2 border-green-400 bg-dark-gray">
-          <div className="flex flex-col justify-center items-center md:items-start border-2 border-red-500 p-4">
+        <div className="mt-7 grid grid-cols-1 md:grid-cols-2 w-full rounded-xl px-7 py-10">
+          <div className="flex flex-col justify-center items-center md:items-start p-4">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -64,7 +64,7 @@ function ContactForm() {
                     render={({ field }) => (
                       <FormItem className="flex-1">
                         <FormLabel>First Name</FormLabel>
-                        <Input placeholder="First Name" {...field} className="" />
+                        <Input placeholder="First Name" {...field} className="h-12" />
                         <FormMessage />
                       </FormItem>
                     )}
@@ -75,7 +75,7 @@ function ContactForm() {
                     render={({ field }) => (
                       <FormItem className="flex-1">
                         <FormLabel>Last Name</FormLabel>
-                        <Input placeholder="Last Name" {...field} className="" />
+                        <Input placeholder="Last Name" {...field} className="h-12" />
                         <FormMessage />
                       </FormItem>
                     )}
@@ -87,7 +87,7 @@ function ContactForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Email</FormLabel>
-                      <Input placeholder="Email" {...field} />
+                      <Input placeholder="Email" {...field} className="h-12" />
                       <FormMessage />
                     </FormItem>
                   )}
@@ -100,53 +100,71 @@ function ContactForm() {
                       <FormLabel>Message</FormLabel>
                       <Textarea
                         placeholder="Message"
-                        className="resize-none"
+                        className="resize-none h-40"
                         {...field}
                       />
                       <FormMessage />
                     </FormItem>
                   )}
                 />
+                <Button type="submit">Submit</Button>
               </form>
             </Form>
           </div>
-          <div className="flex flex-col space-y-6 items-end justify-center border-2 border-blue-400 p-4">
-            <div className="flex flex-col space-y-1 items-end">
+          <div className="flex flex-col space-y-8 items-end justify-center p-4">
+            <div className="flex flex-col space-y-2 items-end">
               <h2 className="text-lg md:text-xl font-medium">Email</h2>
               <p className="text-base md:text-lg text-medium-light-grey">
                 {contact.email}
               </p>
             </div>
-            <div className="flex flex-col space-y-1 items-end">
+            <div className="flex flex-col space-y-2 items-end">
               <h2 className="text-lg md:text-xl font-medium">Address</h2>
               <p className="text-base md:text-lg text-medium-light-grey">
                 {contact.address}
               </p>
             </div>
-            <div className="flex flex-col space-y-2 items-end">
+            <div className="flex flex-col space-y-3 items-end">
               <h2 className="text-lg md:text-xl font-medium">Social</h2>
               <div className="flex flex-row space-x-3 text-medium-light-grey">
                 <Link
                   href={contact.instagram}
                   target="_blank"
                   aria-label="Instagram"
+                  className="hover:text-teal"
                 >
                   <FaInstagram size={30} />
                 </Link>
-                <Link href={contact.medium} target="_blank" aria-label="Medium">
+                <Link
+                  href={contact.medium}
+                  target="_blank"
+                  aria-label="Medium"
+                  className="hover:text-teal"
+                >
                   <FaMedium size={30} />
                 </Link>
-                <Link href={contact.github} target="_blank" aria-label="Github">
+                <Link
+                  href={contact.github}
+                  target="_blank"
+                  aria-label="Github"
+                  className="hover:text-teal"
+                >
                   <FaGithub size={30} />
                 </Link>
                 <Link
                   href={contact.linkedin}
                   target="_blank"
                   aria-label="Linkedin"
+                  className="hover:text-teal"
                 >
                   <FaLinkedin size={30} />
                 </Link>
-                <Link href="/" target="_blank" aria-label="Twitter">
+                <Link
+                  href="/"
+                  target="_blank"
+                  aria-label="Twitter"
+                  className="hover:text-teal"
+                >
                   <FaTwitter size={30} />
                 </Link>
               </div>

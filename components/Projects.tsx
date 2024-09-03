@@ -6,8 +6,8 @@ import { projects } from "@/constants/projects";
 
 function Projects() {
   return (
-    <div className="min-h-screen flex justify-center">
-      <div className="w-full max-w-[1000px] flex flex-col items-center px-10">
+    <div className="min-h-screen flex justify-center bg-[#1C1D20]">
+      <div className="w-full max-w-[1000px] flex flex-col items-center px-10 mb-24">
         <h1 className="font-extrabold text-center text-3xl md:text-4xl mt-24">
           My Projects
         </h1>
@@ -46,7 +46,7 @@ function Projects() {
                   />
                 ))}
               </div>
-              <p className="text-sm md:text-base mt-3 text-medium-light-grey">
+              <p className="text-sm md:text-base mt-3 text-medium-light-grey line-clamp-4">
                 {project.description}
               </p>
               <div className="flex flex-row space-x-3 mt-5">
