@@ -47,7 +47,7 @@ function Projects() {
                   />
                 ))}
               </div>
-              <p className="text-sm md:text-base mt-3 text-medium-light-grey line-clamp-4">
+              <p className="text-sm md:text-base mt-3 text-[#D9D9D9] line-clamp-4">
                 {project.description}
               </p>
               <div className="flex flex-row space-x-3 mt-5">

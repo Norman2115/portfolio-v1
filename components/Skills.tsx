@@ -65,7 +65,7 @@ function Skills() {
                 height={50}
                 className=""
               />
-              <p className="text-sm md:text-base lg:text-lg font-normal break-words">
+              <p className="text-sm md:text-base lg:text-lg text-[#D9D9D9] font-normal break-words">
                 {skill.name}
               </p>
             </div>

@@ -24,13 +24,12 @@ function About() {
             />
           </div>
           <div className="w-full lg:w-2/3 text-justify p-10">
-            <h1 className="text-xl md:text-2xl font-medium mb-2">Yo, I&apos;m <span className="text-teal">Chung Henn</span>.</h1>
-            <h2 className="text-lg md:text-xl font-normal mb-3">Aspiring <span className="text-teal">backend developer</span> from Nilai, Negeri Sembilan, Malaysia</h2>
-            <p className="text-base md:text-lg font-light">
-              I&apos;m a student developer with a love-hate relationship with both frontend and backend development. Despite the challenges, I find coding to be incredibly fun and rewarding. I&apos;m currently in my second year of pursuing a Computer Science degree at INTI International University.
+            <h1 className="text-xl md:text-2xl font-medium mb-3"><span className="text-teal">What&apos;s up!</span></h1>
+            <p className="text-base md:text-lg text-[#D9D9D9] font-normal">
+              I&apos;m a student developer with a love-hate relationship with both frontend and backend development. Despite the challenges, I find coding to be incredibly fun and rewarding, therefore aspiring to become a <span className="text-teal">full stack developer</span> — a dream career I have been holding onto for years. I&apos;m currently in my second year of pursuing a Computer Science degree at INTI International University.
             </p>
             <br />
-            <p className="text-base md:text-lg font-light mb-6">
+            <p className="text-base md:text-lg text-[#D9D9D9] font-normal mb-5">
               I love taking on new challenges and competing in hackathons. I&apos;m always looking for opportunities to learn and grow, and I&apos;m excited to see where my coding journey takes me. When I&apos;m not coding, you&apos;ll likely find me playing basketball or computer games with friends, or planning exciting trips to new destinations with my loved ones.
             </p>
             <div className="flex flex-row space-x-3 items-center">
