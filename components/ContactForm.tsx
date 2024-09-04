@@ -25,6 +25,7 @@ import {
   FaTwitter,
   FaMedium,
 } from "react-icons/fa";
+import DividerWithText from "./DividerWithText";
 
 function ContactForm() {
   // 1. Define your form.
@@ -45,11 +46,12 @@ function ContactForm() {
   }
 
   return (
-    <div className="min-h-[91vh] flex justify-center">
+    <div className="min-h-screen flex justify-center">
       <div className="w-full max-w-[1200px] flex flex-col items-center px-10">
         <h1 className="font-extrabold text-center text-3xl md:text-4xl mt-24">
           Contact Me
         </h1>
+        <DividerWithText text="Get in touch" />
         <div className="mt-7 grid grid-cols-1 md:grid-cols-2 w-full rounded-xl px-7 py-10">
           <div className="flex flex-col justify-center items-center md:items-start p-4">
             <Form {...form}>

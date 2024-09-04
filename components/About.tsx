@@ -11,11 +11,7 @@ function About() {
         <h1 className="text-3xl font-extrabold text-center md:text-4xl">
           About Me
         </h1>
-        <DividerWithText text="Who am I?" />
-        <h2 className="mt-7 text-xl font-medium text-center md:text-2xl mb-10">
-          An <span className="text-teal">aspiring</span> full stack developer
-          from Nilai, Negeri Sembilan, Malaysia.
-        </h2>
+        <DividerWithText text="Who I am" />
         <div className="w-full flex flex-col lg:flex-row justify-center items-center">
           <div className="w-full lg:w-1/3 flex justify-center items-center p-10">
             <Image
@@ -28,12 +24,13 @@ function About() {
             />
           </div>
           <div className="w-full lg:w-2/3 text-justify p-10">
-            <h1 className="text-xl md:text-2xl font-medium mb-3">Hola, I am <span className="text-teal">Chung Henn</span>.</h1>
-            <p className="text-lg md:text-lg font-light">
-              I&apos;m a an aspiring student developer with a love-hate relationship with both frontend and backend development. Despite the challenges, I find coding to be incredibly fun and rewarding. I&apos;m currently in my second year of pursuing a Computer Science degree at INTI International University.
+            <h1 className="text-xl md:text-2xl font-medium mb-2">Yo, I&apos;m <span className="text-teal">Chung Henn</span>.</h1>
+            <h2 className="text-lg md:text-xl font-normal mb-3">Aspiring <span className="text-teal">backend developer</span> from Nilai, Negeri Sembilan, Malaysia</h2>
+            <p className="text-base md:text-lg font-light">
+              I&apos;m a student developer with a love-hate relationship with both frontend and backend development. Despite the challenges, I find coding to be incredibly fun and rewarding. I&apos;m currently in my second year of pursuing a Computer Science degree at INTI International University.
             </p>
             <br />
-            <p className="text-lg md:text-lg font-light mb-6">
+            <p className="text-base md:text-lg font-light mb-6">
               I love taking on new challenges and competing in hackathons. I&apos;m always looking for opportunities to learn and grow, and I&apos;m excited to see where my coding journey takes me. When I&apos;m not coding, you&apos;ll likely find me playing basketball or computer games with friends, or planning exciting trips to new destinations with my loved ones.
             </p>
             <div className="flex flex-row space-x-3 items-center">

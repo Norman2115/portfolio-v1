@@ -3,6 +3,7 @@ import React from "react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { projects } from "@/constants/projects";
+import DividerWithText from "./DividerWithText";
 
 function Projects() {
   return (
@@ -11,12 +12,12 @@ function Projects() {
         <h1 className="font-extrabold text-center text-3xl md:text-4xl mt-24">
           My Projects
         </h1>
-
+        <DividerWithText text="What I've built" />
         {/* Projects */}
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full flex bg-dark-gray mt-10 rounded-lg"
+            className="w-full flex bg-[#2A2A2A] mt-10 rounded-lg transition-transform transform hover:scale-105 hover:bg-[#3A3A3A]"
           >
             <div className="relative w-full h-full hidden lg:w-1/3 lg:flex">
               <Image
