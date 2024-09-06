@@ -83,7 +83,7 @@ function HeroSection() {
             alt="Chung Henn"
             width={400}
             height={400}
-            className="rounded-full transition-transform duration-300 hover:scale-105"
+            className="rounded-full transition-transform duration-300 hover:scale-105 z-10 shadow-custom"
             priority
           />
         </div>

@@ -39,7 +39,7 @@ function TopNavBar() {
 
   const getLinkClass = (section: string) =>
     activeSection === section
-      ? "bg-teal text-white rounded-lg px-4 py-2"
+      ? "bg-teal hover:bg-ligter-teal text-white rounded-lg px-4 py-2"
       : "text-nav-bar-link hover:bg-teal hover:rounded-lg hover:text-white px-4 py-2";
 
   return (
